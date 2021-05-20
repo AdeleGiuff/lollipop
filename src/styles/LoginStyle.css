@@ -1,0 +1,19 @@
+.loginBox {
+  width: 50%;
+  height: 50%;
+  padding: 30px;
+  border: solid 2px brown;
+  border-radius: 4%;
+  background-color: rgba(255, 204, 153, 0.609);
+}
+
+.FormBox {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://i0.wp.com/zeroaxis-studios.com/wp-content/uploads/2020/11/ubaldo-bitumi-SecR2ak__yU-unsplash-scaled-e1606060082667.jpg?fit=1280%2C746&ssl=1%27");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
