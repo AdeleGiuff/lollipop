@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import UserHome from "./components/public/UserHome";
-import LandingPage from "./components/public/LandingPage";
+import LoginForm from "./components/public/LoginForm";
 
 export default function HomeRouter() {
   // const [token, setToken] = useState("");
@@ -40,7 +40,7 @@ export default function HomeRouter() {
           <UserHome />
         </Route>
         <Route path="/">
-          <LandingPage />
+          <LoginForm />
         </Route>
       </Switch>
     </Router>
