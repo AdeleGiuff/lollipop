@@ -1,11 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import LoginForm from "./components/public/LoginForm";
 import "./App.css";
+import HomeRouter from "./HomeRouter";
 
 function App() {
   return (
     <div className="App">
-      <LoginForm />
+      <HomeRouter />
     </div>
   );
 }

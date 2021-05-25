@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container, Row, Col, Modal, Button, Form } from "react-bootstrap";
 
 export default function RegisterForm(props) {
-
   return (
     <div>
       <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
@@ -18,10 +17,7 @@ export default function RegisterForm(props) {
                 <Form>
                   <Form.Group controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control
-                      type="text"
-                      placeholder="user name"
-                    />
+                    <Form.Control type="text" placeholder="user name" />
                     <Form.Text className="text-muted">
                       We'll never share your email with anyone else.
                     </Form.Text>
@@ -29,10 +25,7 @@ export default function RegisterForm(props) {
 
                   <Form.Group controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control
-                      type="password"
-                      placeholder="Password"
-                    />
+                    <Form.Control type="password" placeholder="Password" />
                   </Form.Group>
                   <Form.Group controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
