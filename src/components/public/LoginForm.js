@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import "../../styles/LoginStyle.css";
 
 const LoginForm = () => {
+  const [showModal, setShowModal] = useState(false);
+  const registerUser = (e) => {
+    e.preventDefault();
+    setShowModal(true);
+  };
   return (
     <div className="FormBox">
       <Form className="loginBox">
@@ -26,12 +31,14 @@ const LoginForm = () => {
             Submit
           </Button>
 
-          <Button variant="danger" type="button">
+          <Button variant="danger" type="button" onClick={registerUser}>
             Register
           </Button>
+          <RegisterForm show={showModal} onHide={() => setShowModal(false)} />
         </div>
       </Form>
     </div>
   );
 };
+
 export default LoginForm;
