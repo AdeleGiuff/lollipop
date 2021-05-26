@@ -1,3 +1,6 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .loginBox {
   width: 50%;
   height: 60%;
@@ -19,4 +22,32 @@
 }
 .btn-container {
   margin-top: 5%;
+}
+
+.imgwinery {
+  position: relative;
+  margin: auto;
+  height: 450px;
+  width: 1200px;
+}
+
+.container {
+  background: none;
+  border: none;
+}
+
+.null {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #fffae3;
+  margin-right: 40%;
+}
+
+.nuff {
+  font-size: 15px;
+  background: none;
+  border: none;
+  color: #fffae3;
+  margin-right: 35%;
 }
