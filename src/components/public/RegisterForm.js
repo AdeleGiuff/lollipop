@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Modal, Button, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function RegisterForm(props) {
   return (
@@ -36,10 +37,11 @@ export default function RegisterForm(props) {
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" type="submit">
-            Register
-          </Button>
-
+          <Link to="/userhome">
+            <Button variant="primary" type="submit">
+              Register
+            </Button>
+          </Link>
           <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>

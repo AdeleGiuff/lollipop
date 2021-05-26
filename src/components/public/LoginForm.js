@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import "../../styles/LoginStyle.css";
 import RegisterForm from "./RegisterForm";
+import { Link } from "react-router-dom";
 
 const LoginForm = () => {
   const [showModal, setShowModal] = useState(false);
@@ -9,6 +10,7 @@ const LoginForm = () => {
     e.preventDefault();
     setShowModal(true);
   };
+
   return (
     <div className="FormBox">
       <Form className="loginBox">
@@ -28,14 +30,19 @@ const LoginForm = () => {
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
         <div className="btn-container">
-          <Button className="mr-2" variant="danger" type="submit">
-            Submit
+          <Button className="mr-3" variant="danger" type="submit">
+            Sign in
           </Button>
 
           <Button variant="danger" type="button" onClick={registerUser}>
-            Register
+            Sign up
           </Button>
           <RegisterForm show={showModal} onHide={() => setShowModal(false)} />
+          <Link to="/guesthome">
+            <Button className="mt-4" variant="danger" type="button">
+              Enter as guest
+            </Button>
+          </Link>
         </div>
       </Form>
     </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import UserHome from "./components/public/UserHome";
 import LoginForm from "./components/public/LoginForm";
+import GuestHome from "./components/public/GuestHome";
 
 export default function HomeRouter() {
   // const [token, setToken] = useState("");
@@ -34,6 +35,9 @@ export default function HomeRouter() {
       <Switch>
         <Route path="/userhome">
           <UserHome />
+        </Route>
+        <Route path="/guesthome">
+          <GuestHome />
         </Route>
         <Route path="/profile/:id"></Route>
         <Route path="/search/:q">
