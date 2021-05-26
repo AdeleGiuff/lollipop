@@ -1,7 +1,11 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import { useParams } from "react-router-dom";
 
 const UserHome = () => {
+  const { q } = useParams();
+  console.log(q);
+
   return (
     <div>
       <Card>
